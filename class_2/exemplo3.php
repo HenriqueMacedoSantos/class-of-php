@@ -17,8 +17,25 @@
         <h1 class="display-3 text-center text-primary"> Exemplos PHP </h1>
       </header>
       <section>
+        <h2>Trabalhando com Algoritmos de cálculos: </h2>
+        <p>
+           Desenvolva um algoritmo CONVERSOR, este deve ler número de anos (10), e deverá converter este ano para meses, converter ano para semana, converter ano para dias. Ex.: 1 ano, 12 meses, 52 semanas, 365 dias
+        </p>
         <?php
-          echo "<h2 class='display-4'> Hello World! </h2>";
+          $numeroDeAnos;
+          $emAnos;
+          $emMeses;
+          $emSemanas;
+          $emDias;
+          $numeroDeAnos = 10;
+          $emAnos = $numeroDeAnos * 1;
+          $emMeses = $emAnos * 12;
+          $emSemanas = $emMeses * 52;
+          $emDias = $emSemanas * 365;
+          echo "<p>Anos: ".$emAnos.
+               "<br>Meses: ".$emMeses.
+               "<br>Semana: ".$emSemanas.
+               "<br>Dias: ".$emDias."</p>";
         ?>
       </section>
       <nav>
